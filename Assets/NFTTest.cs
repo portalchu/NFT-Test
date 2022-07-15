@@ -106,11 +106,11 @@ public class NFTTest : MonoBehaviour
         Debug.Log(blockNumberRequest.Result.Value.ToString());
     }
 
-    [Function("mintNFT", "uint256")]
+    [Function("awardItem", "uint256")]
     public class BalanceOfFunction : FunctionMessage
     {
         
-        [Parameter("address", "recipient", 1)]
+        [Parameter("address", "player", 1)]
         public string Owner { get; set; }
 
         [Parameter("string", "tokenURI", 2)]
